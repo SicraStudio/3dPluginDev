@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhcFlokGenerator", "GhcFlokGenerator\GhcFlokGenerator.csproj", "{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug32|Any CPU = Debug32|Any CPU
+		Debug64|Any CPU = Debug64|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Debug32|Any CPU.ActiveCfg = Debug32|Any CPU
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Debug32|Any CPU.Build.0 = Debug32|Any CPU
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Debug64|Any CPU.ActiveCfg = Debug64|Any CPU
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Debug64|Any CPU.Build.0 = Debug64|Any CPU
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4BC2F5-9210-4C5C-B4BA-21346A64C4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
