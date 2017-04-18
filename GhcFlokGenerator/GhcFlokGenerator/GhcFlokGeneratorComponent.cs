@@ -36,7 +36,11 @@ namespace GhcFlokGenerator
             pManager.AddNumberParameter("Alignment", "Alignment", "Alignment", GH_ParamAccess.item, 0.5);
             pManager.AddNumberParameter("Cohesion", "Cohesion", "Cohesion", GH_ParamAccess.item, 0.5);
             pManager.AddNumberParameter("Separation", "Separation", "Separation", GH_ParamAccess.item, 0.5);
-            pManager.AddNumberParameter("Separation", "Separation", "Separation", GH_ParamAccess.item, 1.5);
+            pManager.AddNumberParameter("Separation Distance", "Separation Distance", "Separation Distance", GH_ParamAccess.item, 1.5);
+            pManager.AddCircleParameter("Repellers", "Repellers", "Repellers", GH_ParamAccess.list);
+            pManager[10].Optional = true;
+            pManager.AddBooleanParameter("Use Parallel", "Use Parallel", "Use Parallel", GH_ParamAccess.item, false);
+            pManager.AddBooleanParameter("Use R-Tree", "Use R-Tree", "Use R-Tree", GH_ParamAccess.item, false);
         }
 
         /// <summary>
@@ -53,6 +57,12 @@ namespace GhcFlokGenerator
         /// to store data in output parameters.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
+            bool iReset , iPlay, i3D, iUseParallel, iUseRTree;
+            int iCount;
+            double iTimestep, iNeighbourhoodRadius, iAlignment, iCohesion, iSeparation, iSeparationDistance;
+            List<Circle> iRepellers = new List<Circle>();
+
+
         }
 
         /// <summary>
