@@ -27,6 +27,16 @@ namespace GhcFlokGenerator
         /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
+            pManager.AddBooleanParameter("Reset", "Reset", "Reset", GH_ParamAccess.item, false);
+            pManager.AddBooleanParameter("Play", "Play", "Play", GH_ParamAccess.item, false);
+            pManager.AddBooleanParameter("3d", "3d", "3d", GH_ParamAccess.item, false);
+            pManager.AddIntegerParameter("Count", "Count", "Number of agents", GH_ParamAccess.item, 50);
+            pManager.AddNumberParameter("Timestep", "Timestep", "Timestep", GH_ParamAccess.item, 0.02);
+            pManager.AddNumberParameter("Neighbourhood Radius", "Neighbourhood Radius", "Neighbourhood Radius", GH_ParamAccess.item, 3.5);
+            pManager.AddNumberParameter("Alignment", "Alignment", "Alignment", GH_ParamAccess.item, 0.5);
+            pManager.AddNumberParameter("Cohesion", "Cohesion", "Cohesion", GH_ParamAccess.item, 0.5);
+            pManager.AddNumberParameter("Separation", "Separation", "Separation", GH_ParamAccess.item, 0.5);
+            pManager.AddNumberParameter("Separation", "Separation", "Separation", GH_ParamAccess.item, 1.5);
         }
 
         /// <summary>
